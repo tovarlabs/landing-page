@@ -1,0 +1,140 @@
+---
+import '../styles/global.css';
+
+export interface Props {
+    title: string;
+    description?: string;
+    image?: string;
+    url?: string;
+}
+
+const {
+    title,
+    description = 'Tovarlabs - Creamos páginas web y sistemas web a la medida para empresas que quieren crecer. Desarrollo web profesional, sistemas personalizados y automatización de procesos.',
+    image = '/logo.png',
+    url = 'https://tovarlabs.com',
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/png" href="/logo.png" />
+        <link rel="canonical" href={canonicalURL} />
+        <meta name="generator" content={Astro.generator} />
+
+        <!-- Primary Meta Tags -->
+        <title>{title}</title>
+        <meta name="title" content={title} />
+        <meta name="description" content={description} />
+        <meta
+            name="keywords"
+            content="desarrollo web, páginas web, sistemas web, desarrollo a medida, automatización, CRM, software empresarial, diseño web, Monterrey, México"
+        />
+        <meta name="author" content="Tovarlabs" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="Spanish" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={canonicalURL} />
+        <meta property="og:title" content={title} />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={new URL(image, Astro.site)} />
+        <meta property="og:site_name" content="Tovarlabs" />
+        <meta property="og:locale" content="es_MX" />
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content={canonicalURL} />
+        <meta property="twitter:title" content={title} />
+        <meta property="twitter:description" content={description} />
+        <meta property="twitter:image" content={new URL(image, Astro.site)} />
+
+        <!-- Geo Tags -->
+        <meta name="geo.region" content="MX-NLE" />
+        <meta name="geo.placename" content="Monterrey" />
+        <meta name="geo.position" content="25.6866;-100.3161" />
+        <meta name="ICBM" content="25.6866, -100.3161" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Structured Data / JSON-LD -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "Organization",
+                "name": "Tovarlabs",
+                "url": "https://tovarlabs.com",
+                "logo": "https://tovarlabs.com/logo.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+52-81-4326-4788",
+                    "contactType": "Customer Service",
+                    "areaServed": "MX",
+                    "availableLanguage": ["Spanish", "English"]
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Monterrey",
+                    "addressRegion": "Nuevo León",
+                    "addressCountry": "MX"
+                },
+                "sameAs": ["https://wa.me/528143264788"],
+                "description": "Desarrollo de páginas web profesionales y sistemas web a la medida. Automatización de procesos empresariales y soluciones digitales personalizadas.",
+                "email": "info@tovarlabs.com",
+                "founder": {
+                    "@type": "Person",
+                    "name": "Tovarlabs Team"
+                },
+                "foundingDate": "2024",
+                "knowsAbout": [
+                    "Web Development",
+                    "Custom Software",
+                    "Business Automation",
+                    "CRM Systems",
+                    "Web Design"
+                ],
+                "makesOffer": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Desarrollo de Páginas Web",
+                            "description": "Diseño y desarrollo de sitios web profesionales optimizados para conversión"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Sistemas Web a Medida",
+                            "description": "Desarrollo de sistemas web personalizados para automatizar procesos empresariales"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": {
+                            "@type": "Service",
+                            "name": "Integración de Sistemas",
+                            "description": "Conectamos tu página web con tus sistemas internos para una operación fluida"
+                        }
+                    }
+                ]
+            }
+        </script>
+    </head>
+    <body>
+        <slot />
+    </body>
+</html>

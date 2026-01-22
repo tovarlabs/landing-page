@@ -1,0 +1,517 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout title="Tovarlabs - Soluciones Digitales a Medida">
+    <Header />
+
+    <main>
+        <!-- Hero Section -->
+        <section
+            id="inicio"
+            class="min-h-screen flex items-center justify-center bg-gradient-to-br from-secondary via-secondary-dark to-secondary pt-16"
+        >
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="text-center">
+                    <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                        Creamos soluciones digitales
+                        <span class="text-primary block mt-2"
+                            >completas para tu <span id="rotating-word" class="inline-block"
+                                >negocio</span
+                            ></span
+                        >
+                    </h1>
+                    <p class="text-xl md:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto">
+                        Desde tu página web hasta el sistema que hace funcionar tu empresa. Todo
+                        diseñado a tu medida.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="#contacto"
+                            class="bg-primary text-secondary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-light transform hover:scale-105 transition-all"
+                        >
+                            Comienza tu proyecto
+                        </a>
+                        <a
+                            href="#servicios"
+                            class="bg-transparent border-2 border-primary text-primary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary hover:text-secondary transition-all"
+                        >
+                            Ver servicios
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Floating cards animation -->
+                <div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                    <div
+                        class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-primary/20 hover:border-primary/50 transition-all"
+                    >
+                        <div class="text-4xl mb-2">🌐</div>
+                        <h3 class="text-white font-semibold">Páginas Web</h3>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-primary/20 hover:border-primary/50 transition-all"
+                    >
+                        <div class="text-4xl mb-2">⚙️</div>
+                        <h3 class="text-white font-semibold">Sistemas a Medida</h3>
+                    </div>
+                    <div
+                        class="bg-white/10 backdrop-blur-sm p-6 rounded-lg border border-primary/20 hover:border-primary/50 transition-all"
+                    >
+                        <div class="text-4xl mb-2">🔗</div>
+                        <h3 class="text-white font-semibold">Integración Total</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="servicios" class="py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-4">
+                        ¿Qué hacemos en <span class="text-primary">Tovarlabs?</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Diseñamos y desarrollamos soluciones digitales que impulsan tu negocio
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Web Pages -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-primary"
+                    >
+                        <div class="text-5xl mb-4">🌐</div>
+                        <h3 class="text-2xl font-bold text-secondary mb-4">
+                            Páginas Web Profesionales
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            Diseñamos sitios web modernos y efectivos que convierten visitantes en
+                            clientes.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700">Landing pages de alto impacto</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700">Sitios corporativos profesionales</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700">Webs para negocios locales</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700"
+                                    >Páginas optimizadas para conversión</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Web Systems -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-primary-dark"
+                    >
+                        <div class="text-5xl mb-4">⚙️</div>
+                        <h3 class="text-2xl font-bold text-secondary mb-4">
+                            Sistemas Web a la Medida
+                        </h3>
+                        <p class="text-gray-600 mb-6">
+                            Desarrollamos sistemas personalizados que automatizan y optimizan tus
+                            procesos.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700">Paneles administrativos intuitivos</span
+                                >
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700">Gestión de clientes y ventas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700"
+                                    >Sistemas de operaciones y logística</span
+                                >
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700">Automatización de procesos</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Integration -->
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-primary-light"
+                    >
+                        <div class="text-5xl mb-4">🔗</div>
+                        <h3 class="text-2xl font-bold text-secondary mb-4">Integración Completa</h3>
+                        <p class="text-gray-600 mb-6">
+                            Conectamos tu página web con tus sistemas internos para una operación
+                            fluida.
+                        </p>
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700">Web conectada con tu sistema</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700">Formularios a tu panel de control</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700">Registro automático de clientes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-primary mr-2">✓</span>
+                                <span class="text-gray-700"
+                                    >Digitalización de procesos manuales</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Process -->
+        <section id="como-trabajamos" class="py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-4">
+                        ¿Cómo <span class="text-primary">trabajamos?</span>
+                    </h2>
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                        Un proceso simple y transparente para llevar tu proyecto a la realidad
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div
+                            class="bg-primary text-secondary w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4"
+                        >
+                            1
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-2">Conversación inicial</h3>
+                        <p class="text-gray-600">Entendemos tus necesidades y objetivos</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="bg-primary text-secondary w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4"
+                        >
+                            2
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-2">Propuesta y diseño</h3>
+                        <p class="text-gray-600">Creamos una solución personalizada para ti</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="bg-primary text-secondary w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4"
+                        >
+                            3
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-2">Desarrollo</h3>
+                        <p class="text-gray-600">Construimos tu solución con tecnología moderna</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div
+                            class="bg-primary text-secondary w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4"
+                        >
+                            4
+                        </div>
+                        <h3 class="text-xl font-bold text-secondary mb-2">Lanzamiento</h3>
+                        <p class="text-gray-600">Ponemos en marcha y te acompañamos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-20 bg-gradient-to-br from-secondary to-secondary-dark text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                        ¿Por qué elegir <span class="text-primary">Tovarlabs?</span>
+                    </h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">💡</div>
+                        <h3 class="text-xl font-bold mb-2">Soluciones a medida</h3>
+                        <p class="text-gray-300">
+                            No usamos plantillas. Cada proyecto se diseña específicamente para tu
+                            negocio.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🚀</div>
+                        <h3 class="text-xl font-bold mb-2">Tecnología moderna</h3>
+                        <p class="text-gray-300">
+                            Usamos las últimas tecnologías para crear soluciones rápidas y
+                            escalables.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">📱</div>
+                        <h3 class="text-xl font-bold mb-2">Diseño responsive</h3>
+                        <p class="text-gray-300">
+                            Tus clientes tendrán una experiencia perfecta desde cualquier
+                            dispositivo.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🔒</div>
+                        <h3 class="text-xl font-bold mb-2">Seguro y confiable</h3>
+                        <p class="text-gray-300">
+                            Implementamos las mejores prácticas de seguridad para proteger tu
+                            información.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">⚡</div>
+                        <h3 class="text-xl font-bold mb-2">Optimizado para conversión</h3>
+                        <p class="text-gray-300">
+                            Diseñamos pensando en tus objetivos de negocio y tasas de conversión.
+                        </p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="text-4xl mb-4">🤝</div>
+                        <h3 class="text-xl font-bold mb-2">Soporte continuo</h3>
+                        <p class="text-gray-300">
+                            Te acompañamos después del lanzamiento para asegurar tu éxito.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contacto" class="py-20 bg-gray-50">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-4">
+                        ¿Listo para <span class="text-primary">impulsar tu negocio?</span>
+                    </h2>
+                    <p class="text-xl text-gray-600">Contáctanos y cuéntanos sobre tu proyecto</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    <a
+                        href="mailto:info@tovarlabs.com"
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all group"
+                    >
+                        <div class="text-5xl mb-4">📧</div>
+                        <h3
+                            class="text-xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors"
+                        >
+                            Email
+                        </h3>
+                        <p class="text-gray-600">info@tovarlabs.com</p>
+                    </a>
+
+                    <a
+                        href="https://wa.me/528143264788"
+                        target="_blank"
+                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all group"
+                    >
+                        <div class="text-5xl mb-4">📱</div>
+                        <h3
+                            class="text-xl font-bold text-secondary mb-2 group-hover:text-primary transition-colors"
+                        >
+                            WhatsApp
+                        </h3>
+                        <p class="text-gray-600">+52 81 4326 4788</p>
+                    </a>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-bold text-secondary mb-6 text-center">
+                        Envíanos un mensaje
+                    </h3>
+                    <form class="space-y-6" id="contact-form">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2"
+                                >Nombre</label
+                            >
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                placeholder="Tu nombre"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2"
+                                >Email</label
+                            >
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                placeholder="tu@email.com"
+                            />
+                        </div>
+
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2"
+                                >Teléfono (opcional)</label
+                            >
+                            <input
+                                type="tel"
+                                id="phone"
+                                name="phone"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                placeholder="+52 123 456 7890"
+                            />
+                        </div>
+
+                        <div>
+                            <label
+                                for="message"
+                                class="block text-sm font-medium text-gray-700 mb-2">Mensaje</label
+                            >
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="5"
+                                required
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
+                                placeholder="Cuéntanos sobre tu proyecto..."></textarea>
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="w-full bg-primary text-secondary px-8 py-4 rounded-lg text-lg font-semibold hover:bg-primary-light transform hover:scale-105 transition-all"
+                        >
+                            Enviar mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-20 bg-gradient-to-r from-primary-dark via-primary to-primary-light">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-6">
+                    Tu próximo proyecto digital comienza aquí
+                </h2>
+                <p class="text-xl text-secondary/80 mb-8">
+                    Empresas que quieren crecer, automatizar procesos y tener control real de su
+                    operación
+                </p>
+                <a
+                    href="https://wa.me/528143264788?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios"
+                    target="_blank"
+                    class="inline-block bg-secondary text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-secondary-dark transform hover:scale-105 transition-all"
+                >
+                    Hablemos por WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <Footer />
+</Layout>
+
+<script>
+    // Contact form handling
+    const form = document.getElementById('contact-form') as HTMLFormElement;
+
+    form?.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const phone = formData.get('phone');
+        const message = formData.get('message');
+
+        // Create WhatsApp message
+        const whatsappMessage = `Hola! Mi nombre es ${name}.%0A%0AEmail: ${email}${phone ? `%0ATeléfono: ${phone}` : ''}%0A%0AMensaje: ${message}`;
+        const whatsappUrl = `https://wa.me/528143264788?text=${whatsappMessage}`;
+
+        // Open WhatsApp
+        window.open(whatsappUrl, '_blank');
+
+        // Reset form
+        form.reset();
+    });
+
+    // Add smooth scroll behavior
+    document.documentElement.style.scrollBehavior = 'smooth';
+
+    // Rotating words animation
+    const words = ['negocio', 'empresa', 'proyecto', 'visión'];
+    let currentIndex = 0;
+    const rotatingWord = document.getElementById('rotating-word');
+
+    function rotateWord() {
+        if (rotatingWord) {
+            // Fade out
+            rotatingWord.style.opacity = '0';
+            rotatingWord.style.transform = 'translateY(-10px)';
+
+            setTimeout(() => {
+                currentIndex = (currentIndex + 1) % words.length;
+                rotatingWord.textContent = words[currentIndex];
+
+                // Fade in
+                rotatingWord.style.opacity = '1';
+                rotatingWord.style.transform = 'translateY(0)';
+            }, 300);
+        }
+    }
+
+    // Change word every 3 seconds
+    setInterval(rotateWord, 3000);
+</script>
+
+<style>
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    section {
+        animation: fadeInUp 0.6s ease-out;
+    }
+
+    #rotating-word {
+        transition:
+            opacity 0.3s ease,
+            transform 0.3s ease;
+        display: inline-block;
+    }
+</style>

@@ -1,0 +1,108 @@
+---
+
+---
+
+<nav class="fixed w-full bg-white/90 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex-shrink-0">
+                <a href="#inicio" class="flex items-center gap-3 group">
+                    <img
+                        src="/logo.png"
+                        alt="Tovarlabs"
+                        class="h-10 w-auto transition-transform group-hover:scale-110"
+                    />
+                    <span class="text-2xl font-bold text-secondary hidden sm:block">
+                        Tovar<span class="text-primary">labs</span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center space-x-8">
+                <a
+                    href="#servicios"
+                    class="text-secondary hover:text-primary transition-colors font-medium"
+                >
+                    Servicios
+                </a>
+                <a
+                    href="#como-trabajamos"
+                    class="text-secondary hover:text-primary transition-colors font-medium"
+                >
+                    Proceso
+                </a>
+                <a
+                    href="#contacto"
+                    class="bg-primary text-secondary px-6 py-2 rounded-lg hover:bg-primary-light transition-all font-semibold"
+                >
+                    Contactar
+                </a>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-btn" class="text-secondary hover:text-primary">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+            <a
+                href="#servicios"
+                class="block px-3 py-2 text-secondary hover:text-primary hover:bg-gray-50 rounded-md"
+            >
+                Servicios
+            </a>
+            <a
+                href="#como-trabajamos"
+                class="block px-3 py-2 text-secondary hover:text-primary hover:bg-gray-50 rounded-md"
+            >
+                Proceso
+            </a>
+            <a
+                href="#contacto"
+                class="block px-3 py-2 bg-primary text-secondary rounded-md text-center font-semibold"
+            >
+                Contactar
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuBtn?.addEventListener('click', () => {
+        mobileMenu?.classList.toggle('hidden');
+    });
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', (e) => {
+            e.preventDefault();
+            const href = anchor.getAttribute('href');
+            const target = document.querySelector(href || '');
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+                // Close mobile menu after click
+                mobileMenu?.classList.add('hidden');
+            }
+        });
+    });
+</script>
