@@ -1,7 +1,16 @@
-/* Global Styles */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+    /* Define color scales for Tailwind CSS 4 */
+    --color-primary-*: initial;
+    --color-primary: #00ffca;
+    --color-primary-light: #33ffd5;
+    --color-primary-dark: #00cca2;
+
+    --color-secondary-*: initial;
+    --color-secondary: #20466b;
+    --color-secondary-dark: #2c6092;
+}
 
 @layer base {
     html {
@@ -9,7 +18,9 @@
     }
 
     body {
-        @apply font-sans antialiased;
+        font-family: Inter, system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
     }
 }
 

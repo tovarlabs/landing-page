@@ -5,14 +5,12 @@ export interface Props {
     title: string;
     description?: string;
     image?: string;
-    url?: string;
 }
 
 const {
     title,
     description = 'Tovarlabs - Creamos páginas web y sistemas web a la medida para empresas que quieren crecer. Desarrollo web profesional, sistemas personalizados y automatización de procesos.',
     image = '/logo.png',
-    url = 'https://tovarlabs.com',
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
@@ -70,7 +68,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
         />
 
         <!-- Structured Data / JSON-LD -->
-        <script type="application/ld+json">
+        <script type="application/ld+json" is:inline>
             {
                 "@context": "https://schema.org",
                 "@type": "Organization",
