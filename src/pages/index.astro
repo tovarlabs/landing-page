@@ -300,117 +300,414 @@ import Footer from '../components/Footer.astro';
         </section>
 
         <!-- Services Section -->
-        <section id="servicios" class="py-20 bg-gray-50">
+        <section id="servicios" class="py-24 bg-gradient-to-b from-gray-50 to-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-4">
-                        ¿Qué hacemos en <span class="text-primary">Tovarlabs?</span>
+                <!-- Header -->
+                <div class="text-center mb-20">
+                    <div
+                        class="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-6"
+                    >
+                        <svg
+                            class="w-5 h-5 text-primary"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        <span class="text-sm font-medium text-primary">Servicios principales</span>
+                    </div>
+                    <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-6">
+                        Transformamos ideas en
+                        <span class="text-primary block mt-2">soluciones digitales</span>
                     </h2>
-                    <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                        Diseñamos y desarrollamos soluciones digitales que impulsan tu negocio
+                    <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                        Desde tu presencia online hasta sistemas complejos que impulsan tu operación
                     </p>
                 </div>
 
+                <!-- Services Grid -->
                 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                    <!-- Web Pages -->
+                    <!-- Service Card 1: Web Pages -->
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-primary"
+                        class="service-card group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
                     >
-                        <div class="text-5xl mb-4">🌐</div>
-                        <h3 class="text-2xl font-bold text-secondary mb-4">
+                        <!-- Icon Container -->
+                        <div class="relative mb-6">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <svg
+                                    class="w-8 h-8 text-primary"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <!-- Decorative Element -->
+                            <div
+                                class="absolute -top-1 -right-1 w-6 h-6 bg-primary/20 rounded-full blur-md group-hover:bg-primary/40 transition-colors"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3
+                            class="text-2xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors"
+                        >
                             Páginas Web Profesionales
                         </h3>
-                        <p class="text-gray-600 mb-6">
-                            Diseñamos sitios web modernos y efectivos que convierten visitantes en
-                            clientes.
+
+                        <!-- Description -->
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Sitios web modernos y efectivos que convierten visitantes en clientes y
+                            fortalecen tu marca.
                         </p>
+
+                        <!-- Main Benefit Badge -->
+                        <div
+                            class="inline-flex items-center gap-2 bg-green-50 border border-green-200 rounded-lg px-3 py-2 mb-6"
+                        >
+                            <svg
+                                class="w-4 h-4 text-green-600"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                ></path>
+                            </svg>
+                            <span class="text-sm font-semibold text-green-700"
+                                >ROI medible desde el día 1</span
+                            >
+                        </div>
+
+                        <!-- Features List -->
                         <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700">Landing pages de alto impacto</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700">Sitios corporativos profesionales</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700">Webs para negocios locales</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
                                 <span class="text-gray-700"
-                                    >Páginas optimizadas para conversión</span
+                                    >Landing pages optimizadas para conversión</span
                                 >
                             </li>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700"
+                                    >Sitios corporativos con identidad única</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">SEO y performance optimizados</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Diseño responsive y accesible</span>
+                            </li>
                         </ul>
+
+                        <!-- Hover Border Effect -->
+                        <div
+                            class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-transparent pointer-events-none transition-all duration-300"
+                        >
+                        </div>
                     </div>
 
-                    <!-- Web Systems -->
+                    <!-- Service Card 2: Web Systems -->
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-primary-dark"
+                        class="service-card group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
                     >
-                        <div class="text-5xl mb-4">⚙️</div>
-                        <h3 class="text-2xl font-bold text-secondary mb-4">
-                            Sistemas Web a la Medida
+                        <!-- Icon Container -->
+                        <div class="relative mb-6">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary/20 to-secondary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <svg
+                                    class="w-8 h-8 text-secondary"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div
+                                class="absolute -top-1 -right-1 w-6 h-6 bg-secondary/20 rounded-full blur-md group-hover:bg-secondary/40 transition-colors"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3
+                            class="text-2xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors"
+                        >
+                            Sistemas Web a Medida
                         </h3>
-                        <p class="text-gray-600 mb-6">
-                            Desarrollamos sistemas personalizados que automatizan y optimizan tus
-                            procesos.
+
+                        <!-- Description -->
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Soluciones personalizadas que automatizan procesos y optimizan la
+                            gestión de tu negocio.
                         </p>
+
+                        <!-- Main Benefit Badge -->
+                        <div
+                            class="inline-flex items-center gap-2 bg-blue-50 border border-blue-200 rounded-lg px-3 py-2 mb-6"
+                        >
+                            <svg
+                                class="w-4 h-4 text-blue-600"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                ></path>
+                            </svg>
+                            <span class="text-sm font-semibold text-blue-700"
+                                >Ahorra +60% de tiempo operativo</span
+                            >
+                        </div>
+
+                        <!-- Features List -->
                         <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700">Paneles administrativos intuitivos</span
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
                                 >
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700">Gestión de clientes y ventas</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
                                 <span class="text-gray-700"
-                                    >Sistemas de operaciones y logística</span
+                                    >Dashboards administrativos intuitivos</span
                                 >
                             </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700">Automatización de procesos</span>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">CRM y gestión de clientes</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700"
+                                    >Automatización de flujos de trabajo</span
+                                >
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700"
+                                    >Reportes y analíticas en tiempo real</span
+                                >
                             </li>
                         </ul>
+
+                        <div
+                            class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-transparent pointer-events-none transition-all duration-300"
+                        >
+                        </div>
                     </div>
 
-                    <!-- Integration -->
+                    <!-- Service Card 3: Integration -->
                     <div
-                        class="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow border-t-4 border-primary-light"
+                        class="service-card group relative bg-white rounded-2xl p-8 border border-gray-200 hover:border-primary/50 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
                     >
-                        <div class="text-5xl mb-4">🔗</div>
-                        <h3 class="text-2xl font-bold text-secondary mb-4">Integración Completa</h3>
-                        <p class="text-gray-600 mb-6">
-                            Conectamos tu página web con tus sistemas internos para una operación
-                            fluida.
-                        </p>
-                        <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700">Web conectada con tu sistema</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700">Formularios a tu panel de control</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700">Registro automático de clientes</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-primary mr-2">✓</span>
-                                <span class="text-gray-700"
-                                    >Digitalización de procesos manuales</span
+                        <!-- Icon Container -->
+                        <div class="relative mb-6">
+                            <div
+                                class="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center group-hover:scale-110 transition-transform duration-300"
+                            >
+                                <svg
+                                    class="w-8 h-8 text-primary"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
                                 >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
+                                    ></path>
+                                </svg>
+                            </div>
+                            <div
+                                class="absolute -top-1 -right-1 w-6 h-6 bg-primary/20 rounded-full blur-md group-hover:bg-primary/40 transition-colors"
+                            >
+                            </div>
+                        </div>
+
+                        <!-- Title -->
+                        <h3
+                            class="text-2xl font-bold text-secondary mb-3 group-hover:text-primary transition-colors"
+                        >
+                            Integración Completa
+                        </h3>
+
+                        <!-- Description -->
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            Conectamos tus sistemas digitales para crear una operación fluida y sin
+                            fricciones.
+                        </p>
+
+                        <!-- Main Benefit Badge -->
+                        <div
+                            class="inline-flex items-center gap-2 bg-purple-50 border border-purple-200 rounded-lg px-3 py-2 mb-6"
+                        >
+                            <svg
+                                class="w-4 h-4 text-purple-600"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                            >
+                                <path
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                ></path>
+                            </svg>
+                            <span class="text-sm font-semibold text-purple-700"
+                                >Ecosistema digital unificado</span
+                            >
+                        </div>
+
+                        <!-- Features List -->
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Web sincronizada con tu sistema</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">APIs robustas y escalables</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Sincronización en tiempo real</span>
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <svg
+                                    class="w-5 h-5 text-primary mt-0.5 flex-shrink-0"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-gray-700">Migración de datos segura</span>
                             </li>
                         </ul>
+
+                        <div
+                            class="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/0 to-primary/0 group-hover:from-primary/5 group-hover:to-transparent pointer-events-none transition-all duration-300"
+                        >
+                        </div>
                     </div>
                 </div>
             </div>
@@ -756,6 +1053,18 @@ import Footer from '../components/Footer.astro';
 
         if (heroContent) observer.observe(heroContent);
         if (heroVisual) observer.observe(heroVisual);
+
+        // Observe service cards with stagger effect
+        const serviceCards = document.querySelectorAll('.service-card');
+        serviceCards.forEach((card, index) => {
+            const htmlCard = card as HTMLElement;
+            // Add initial hidden state
+            htmlCard.style.opacity = '0';
+            htmlCard.style.transform = 'translateY(40px)';
+            htmlCard.style.transition = `opacity 0.6s ease-out ${index * 0.15}s, transform 0.6s ease-out ${index * 0.15}s`;
+
+            observer.observe(card);
+        });
     });
 </script>
 
@@ -778,6 +1087,12 @@ import Footer from '../components/Footer.astro';
 
     .hero-visual.animate-in {
         transition-delay: 0.2s;
+    }
+
+    /* Service cards animation */
+    .service-card.animate-in {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
     }
 
     .hero-highlight {
