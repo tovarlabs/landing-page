@@ -1,43 +1,43 @@
 # Tovarlabs Landing Page
 
-Landing page profesional para Tovarlabs - Agencia de desarrollo de software.
+Professional landing page for Tovarlabs - Software Development Agency.
 
-## 🚀 Tecnologías
+## 🚀 Technologies
 
-- **Astro** - Framework web moderno
-- **Tailwind CSS** - Estilos utility-first
-- **TypeScript** - Tipado estático
+- **Astro** - Modern web framework
+- **Tailwind CSS** - Utility-first styling
+- **TypeScript** - Static typing
 
-## 🎨 Paleta de Colores
+## 🎨 Color Palette
 
-- Primary: `#00ffca` (Verde agua)
+- Primary: `#00ffca` (Aqua green)
 - Primary Light: `#33ffd5`
 - Primary Dark: `#00cca2`
-- Secondary: `#20466b` (Azul oscuro)
+- Secondary: `#20466b` (Dark blue)
 - Secondary Dark: `#2c6092`
 
-## 📦 Instalación
+## 📦 Installation
 
 ```bash
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Iniciar servidor de desarrollo
+# Start development server
 npm run dev
 
-# Construir para producción
+# Build for production
 npm run build
 
-# Previsualizar build de producción
+# Preview production build
 npm run preview
 ```
 
-## 🌐 Contacto
+## 🌐 Contact
 
 - **Email:** info@tovarlabs.com
 - **WhatsApp:** +52 81 4326 4788
 
-## 📂 Estructura del Proyecto
+## 📂 Project Structure
 
 ```
 /
@@ -56,16 +56,16 @@ npm run preview
 └── package.json
 ```
 
-## ✨ Características
+## ✨ Features
 
-- Diseño moderno y minimalista
-- Completamente responsive
-- Optimizado para SEO
-- Integración con WhatsApp
-- Formulario de contacto funcional
-- Animaciones suaves
-- Navegación fluida
+- Modern and minimalist design
+- Fully responsive
+- SEO optimized
+- WhatsApp integration
+- Functional contact form
+- Smooth animations
+- Smooth navigation
 
 ---
 
-Desarrollado por **Tovarlabs** 💙
+Developed by **Tovarlabs** 💙
