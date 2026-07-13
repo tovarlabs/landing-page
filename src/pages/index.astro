@@ -1366,22 +1366,186 @@ import Footer from '../components/Footer.astro';
         </section>
 
         <!-- Final CTA -->
-        <section class="py-20 bg-gradient-to-r from-primary-dark via-primary to-primary-light">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 class="text-4xl md:text-5xl font-bold text-secondary mb-6">
-                    Tu próximo proyecto digital comienza aquí
-                </h2>
-                <p class="text-xl text-secondary/80 mb-8">
-                    Empresas que quieren crecer, automatizar procesos y tener control real de su
-                    operación
-                </p>
-                <a
-                    href="https://wa.me/528143264788?text=Hola,%20me%20interesa%20conocer%20más%20sobre%20sus%20servicios"
-                    target="_blank"
-                    class="inline-block bg-secondary text-white px-10 py-4 rounded-lg text-lg font-semibold hover:bg-secondary-dark transform hover:scale-105 transition-all"
+        <section
+            class="relative overflow-hidden py-24 bg-linear-to-r from-primary-dark via-primary to-primary-light"
+        >
+            <div class="absolute inset-0 opacity-15">
+                <div class="absolute -left-20 top-10 h-72 w-72 rounded-full bg-white blur-3xl">
+                </div>
+                <div
+                    class="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-secondary/25 blur-3xl"
                 >
-                    Hablemos por WhatsApp
-                </a>
+                </div>
+            </div>
+
+            <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-[1.15fr_0.85fr] gap-10 items-center">
+                    <div>
+                        <div
+                            class="inline-flex items-center gap-2 rounded-full bg-white/20 px-4 py-2 text-sm font-semibold text-secondary mb-6 backdrop-blur-sm"
+                        >
+                            Cierre de proyecto
+                        </div>
+                        <h2
+                            class="text-4xl md:text-5xl lg:text-6xl font-bold text-secondary mb-6 leading-tight max-w-2xl"
+                        >
+                            Convierte una idea en una solución digital que sí genere resultados
+                        </h2>
+                        <p class="text-xl text-secondary/80 max-w-2xl leading-relaxed mb-8">
+                            Si buscas una web rápida, clara y hecha a medida, podemos ayudarte a
+                            diseñar una experiencia que ordene tu operación, mejore tu presencia y
+                            convierta mejor.
+                        </p>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8 max-w-3xl">
+                            <div
+                                class="rounded-2xl bg-white/70 p-4 backdrop-blur-sm shadow-lg shadow-secondary/10"
+                            >
+                                <p class="text-sm font-semibold text-secondary/70 mb-1">
+                                    Experiencia
+                                </p>
+                                <p class="text-2xl font-bold text-secondary">+6 años</p>
+                                <p class="text-sm text-secondary/70">
+                                    acompañando negocios en su salto digital
+                                </p>
+                            </div>
+                            <div
+                                class="rounded-2xl bg-white/70 p-4 backdrop-blur-sm shadow-lg shadow-secondary/10"
+                            >
+                                <p class="text-sm font-semibold text-secondary/70 mb-1">Enfoque</p>
+                                <p class="text-2xl font-bold text-secondary">100% a medida</p>
+                                <p class="text-sm text-secondary/70">
+                                    soluciones pensadas para tu operación real
+                                </p>
+                            </div>
+                            <div
+                                class="rounded-2xl bg-white/70 p-4 backdrop-blur-sm shadow-lg shadow-secondary/10"
+                            >
+                                <p class="text-sm font-semibold text-secondary/70 mb-1">Stack</p>
+                                <p class="text-2xl font-bold text-secondary">Moderno</p>
+                                <p class="text-sm text-secondary/70">
+                                    Astro, Vue, Laravel, PHP y TypeScript
+                                </p>
+                            </div>
+                            <div
+                                class="rounded-2xl bg-white/70 p-4 backdrop-blur-sm shadow-lg shadow-secondary/10"
+                            >
+                                <p class="text-sm font-semibold text-secondary/70 mb-1">
+                                    Acompañamiento
+                                </p>
+                                <p class="text-2xl font-bold text-secondary">Continuo</p>
+                                <p class="text-sm text-secondary/70">
+                                    seguimiento después del lanzamiento
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a
+                                href="https://wa.me/528143264788?text=Hola,%20quiero%20hablar%20sobre%20mi%20proyecto%20digital"
+                                target="_blank"
+                                class="inline-flex items-center justify-center gap-2 bg-secondary text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-secondary-dark transform hover:scale-105 transition-all shadow-xl shadow-secondary/20"
+                            >
+                                <span>Escribir por WhatsApp</span>
+                                <svg
+                                    class="w-5 h-5"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M13 5l7 7-7 7M5 12h15"></path>
+                                </svg>
+                            </a>
+                            <a
+                                href="#contacto"
+                                class="inline-flex items-center justify-center gap-2 bg-white/20 text-secondary px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white/30 transition-all backdrop-blur-sm"
+                            >
+                                <span>Volver al formulario</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="relative">
+                        <div
+                            class="rounded-3xl border border-white/30 bg-white/80 p-6 shadow-2xl shadow-secondary/15 backdrop-blur-md"
+                        >
+                            <div class="flex items-center justify-between mb-6">
+                                <div>
+                                    <p
+                                        class="text-sm font-semibold uppercase tracking-[0.22em] text-secondary/60"
+                                    >
+                                        Resumen
+                                    </p>
+                                    <h3 class="text-2xl font-bold text-secondary">
+                                        Lo que entregamos
+                                    </h3>
+                                </div>
+                                <div
+                                    class="h-14 w-14 rounded-2xl bg-primary/15 flex items-center justify-center text-secondary"
+                                >
+                                    <svg
+                                        class="h-7 w-7"
+                                        fill="none"
+                                        stroke="currentColor"
+                                        viewBox="0 0 24 24"
+                                    >
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="1.8"
+                                            d="M12 6v6l4 2"></path>
+                                        <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            stroke-width="1.8"
+                                            d="M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+
+                            <div class="space-y-4">
+                                <div class="flex items-start gap-3 rounded-2xl bg-gray-50 p-4">
+                                    <span class="mt-1 h-2.5 w-2.5 rounded-full bg-primary"></span>
+                                    <div>
+                                        <p class="font-semibold text-secondary">
+                                            Claridad de alcance
+                                        </p>
+                                        <p class="text-sm text-gray-600">
+                                            Sabes qué se hará, en qué orden y con qué prioridad.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3 rounded-2xl bg-gray-50 p-4">
+                                    <span class="mt-1 h-2.5 w-2.5 rounded-full bg-secondary"></span>
+                                    <div>
+                                        <p class="font-semibold text-secondary">
+                                            Diseño y desarrollo alineados
+                                        </p>
+                                        <p class="text-sm text-gray-600">
+                                            La experiencia visual y la implementación avanzan sin
+                                            fricción.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start gap-3 rounded-2xl bg-gray-50 p-4">
+                                    <span class="mt-1 h-2.5 w-2.5 rounded-full bg-primary"></span>
+                                    <div>
+                                        <p class="font-semibold text-secondary">
+                                            Soporte post-lanzamiento
+                                        </p>
+                                        <p class="text-sm text-gray-600">
+                                            No te dejamos solo después de publicar el proyecto.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
